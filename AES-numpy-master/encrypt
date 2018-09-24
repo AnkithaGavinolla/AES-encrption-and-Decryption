@@ -1,0 +1,11 @@
+#!/usr/bin/env python
+# encoding: utf-8
+
+import sys
+from aes import aes_encrypt, aes_decrypt
+
+key = "AES_ENCRIPT_TEST"
+
+text = sys.stdin.read()
+encrypted = aes_encrypt(text, key)
+print(encrypted.decode())
